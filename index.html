@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.css" rel="stylesheet" media="all"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" rel="stylesheet" media="all">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/butterfly.png" alt="logo-image">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-table"></i></li>
+            <li><i class="fa-solid fa-rectangle-list"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+        </ul>
+        <div class="alertandlogout">
+            <div class="notifications"><i class="fa-solid fa-bell"></i></div>
+            <div class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile">
+            <div class="userinfo">
+                <img src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic.jpg"
+                    alt="dp" />
+                <div class="text">
+                    <span class="name">Hi Mike,</span>
+                    <span>welcome back</span>
+                </div>
+            </div>
+            <div class="overview">
+                <h4 class="heading">Today</h4>
+                <div class="acbal">
+                    <span>$19,892</span>
+                    <span>Account Balance</span>
+                </div>
+                <div class="contrib">
+                    <span>$4,000</span>
+                    <span>Year to date contributions</span>
+                </div>
+                <div class="intrest">
+                    <span>$1,892</span>
+                    <span>Total intrest</span>
+                </div>
+                <button>I want to </button>
+                <div class="transactions">
+                    <h4>Recent Transactions</h4>
+                    <div>
+                        <span>2020-08-07</span>
+                        <span>Withdrawl Transfer To Bank-XXX11</span>
+                    </div>
+                    <div>
+                        <span>2020-07-21</span>
+                        <span>Withdrawl Transfer To Bank-XXX11</span>
+                    </div>
+                    <div>
+                        <span>2020-07-16</span>
+                        <span>Withdrawl Transfer To Bank-XXX11</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div>
+                <h6 class="retirement-heading">Retirement Income</h6>
+                <h3>Starting Year 2056</h3>
+            </div>
+            <div class="income">
+                <div>
+                    <span>$300,000</span>
+                    <p>My Goal</p>
+                </div>
+                <div>
+                    <span>59%</span>
+                    <p>Goal Achieved</p>
+                </div>
+                <div>
+                    <span>$300</span>
+                    <p>Est. Monthly Income</p>
+                </div>
+            </div>
+            <div class="contributions-graph">
+                <h4>Contributions Overtime</h4>
+                <div id="container">
+                </div>
+                <div class="compare">
+                    <h4>How do I compare to my peers?</h4>
+                    <p>These Numbers Represent Current Goal achievement</p>
+                </div>
+                <div class="circular-chart">
+                    <div class="chartdata">
+                        <span>Age: Under 30</span>
+                        <span>Salary: K 20 . K 30</span>
+                        <span>Gender: Male</span>
+                    </div>
+                    <div class="charts">
+                        <div id="chart1"></div>
+                        <div id="chart2"></div>
+                        <div id="chart3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            
+            <h4>Retirement Strategy</h4>
+            <div>
+                <h5>Employee Contribution</h5>
+                <div class="range">
+                    <input type="range" name="" value="12" max="20" id="" />
+                    <span>12%</span>
+                </div>
+            </div>
+            <div>
+                <h5>Retirement Age</h5>
+                <div class="range">
+                    <input type="range" name="" value="65" max="100" id="" />
+                    <span>65%</span>
+                </div>
+            </div>
+            <div class="norange">
+                <h5>Employee Contribution</h5>
+                <span>8.4%</span>
+            </div>
+            <div class="norange">
+                <h5>Intrest Rate</h5>
+                <span>5%</span>
+            </div>
+            <button>Update</button>
+            <h6 class="learnmorelink">View Help Docs &gt;</h6>
+            <div class="learn-more">
+                <p>Are you considering a</p>
+                <h5>Housing Advance?</h5>
+                <h6>Limited Time reduced intrest</h6>
+                <span>Learn More ></span>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script.js"></script>
+    <!-- <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script> -->
+</body>
+
+</html>

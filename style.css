@@ -1,0 +1,346 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+body{
+    width:100%;
+    height:100vh;
+    padding: 10px;
+}
+.navbar{
+    width:40px;
+    height:100%;
+    z-index: 99;
+    background: #fff;
+    position: fixed;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+.navbar .logo{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: #7F7F7F;
+    margin-top: 20px;
+}
+.navbar .logo img{
+    width:40px;
+    margin-bottom: 20px;
+}
+.navbar .logo .search{
+    cursor: pointer;
+}
+.navbar .logo .search:hover{
+    color: #09e;
+}
+
+.navbar ul{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li{
+    /* margin: 10px; */
+    color: #7F7F7F;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar ul li:hover,
+.navbar .alertandlogout div:hover{
+    color: #FFFFFF;
+    background: #09e;
+}
+.navbar .alertandlogout{
+    position: absolute;
+    bottom: 40px;
+}
+
+.navbar .alertandlogout div{
+    font-size: 20px;
+    /* margin: 5px 0; */
+    color: #7F7F7F;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    width: calc(100% - 60px);
+    /* border: 1px solid red; */
+    padding: 0 40px;
+    position: absolute;
+    top: 0; 
+    left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .userinfo{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.profile .userinfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #999;
+}
+.profile .userinfo .text{
+    display: flex;
+    flex-direction: column;
+}
+.profile .userinfo .text .name{
+    font-weight: 600;
+    font-size: 25px;
+}
+.profile .overview{
+    padding: 10px;
+}
+.profile .overview .acbal span:nth-child(1){
+    font-weight: 600;
+    font-size: 25px;
+}
+.contrib span:nth-child(1), .intrest span:nth-child(1){
+    font-weight: 600;
+    font-size: 20px;
+}
+.profile .overview button{
+    padding: 8px 25px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #09e;
+    border: none;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.profile .overview div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.profile .overview div span:nth-child(1){
+    color: #444;
+}
+.profile .overview div span:nth-child(2){
+    color: #999;
+}
+.profile .overview .transactions span:nth-child(1){
+    color: #999;
+}
+.profile .overview .transactions span:nth-child(2){
+    color: #444;
+}
+.content div .retirement-heading{
+    color: #09e;
+    margin: 10px 0;
+}
+.content{
+    padding-top:20px;
+    position: relative;
+}
+.content .income{
+    width: 400px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.content .income div{
+    /* margin-left:20px; */
+    text-align: left;
+}
+.content .income div span{
+    font-weight: 900;
+    color: #444;
+}
+.content .income div p{
+    color: #999;
+    padding: 10px 2px;
+    border-bottom: 1px solid #09e;
+}
+.actions{
+    padding-top:20px;
+    min-width: 200px;
+}
+.actions > div{
+    margin: 30px 0;
+}
+.actions > div h5{
+    margin: 5px 0;
+}
+.actions .norange{
+    display: flex;
+    align-items: center;
+}
+.actions .norange span{
+    margin: 0 10px;
+}
+.actions button{
+    width: 150px;
+    padding: 10px 15px;
+    background: #09e;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.actions > h6{
+    text-align: center;
+    color: #09e;
+    margin: 10px 0;
+}
+.learn-more{
+    border-left: 1px solid #09e;
+    padding: 0 10px;
+}
+.learn-more h6{
+    color: #999;
+    margin: 10px 0;
+}
+.learn-more span{
+    font-size: 12px;
+    color: #09e;
+}
+.charts{
+    /* width: 600px; */
+    display: flex;
+    font-size: 14px;
+}
+
+.charts svg{
+    width: 100px;
+}
+
+.charts svg text{
+    font-size: 12px;
+}
+
+.compare h4{
+    color: #444;
+}
+
+.compare p{
+    color: #999;
+}
+
+.circular-chart{
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* transform: translateX(25%); */
+}
+
+.circular-chart .chartdata{
+    display: flex;
+    flex-direction: column;
+}
+
+.circular-chart .chartdata span{
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+#container{
+    /* width: 200px; */
+    height: 350px;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .navbar{
+        top: auto;
+        bottom:0;
+        width: 100%;
+        height: 40px;
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+    }
+    .navbar .logo {
+        margin: 0;
+        /* width: 20px; */
+        height: 100%;
+    }
+    .navbar .logo img{
+        display: none;
+    }
+    .navbar .logo .search{
+        position: absolute;
+        right: 40px;
+    }
+    .navbar ul{
+        width: 80%;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        float: left;
+    }
+    .navbar .alertandlogout .logout{
+        display: none;
+    }
+    
+    .navbar .alertandlogout .notifications{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+    }
+    .circular-chart{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .circular-chart .chartdata{
+        margin: 10px 0;
+    }
+    .learnmorelink, .learn-more{
+        display: none;
+    }
+    .actions button{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .actions .range input{
+        width: 80%;
+    }
+    .content .income p {
+        font-size: 14px;
+    }
+    .content .income{
+        width: auto;
+    }
+    .actions .norange{
+        justify-content: space-between;       
+    }
+    .compare h4{
+        margin: 10px 0;
+    }
+}
